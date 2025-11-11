@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero-Cost Student Action Plan - Barangay Paralayunan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-collapsed {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .section-expanded {
+            max-height: 5000px;
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-blue-50 min-h-screen p-6">
+    <div class="max-w-5xl mx-auto">
+        <!-- Header -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Zero-Cost Student Action Plan</h1>
+                    <p class="text-gray-600">Barangay Paralayunan Environmental Revival</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-green-100 p-4 rounded-lg">
+                    <div class="text-2xl font-bold text-green-700">₱0</div>
+                    <div class="text-sm text-gray-600">Budget Needed</div>
+                </div>
+                <div class="bg-blue-100 p-4 rounded-lg">
+                    <div class="text-2xl font-bold text-blue-700">15</div>
+                    <div class="text-sm text-gray-600">Actions Ready to Start</div>
+                </div>
+                <div class="bg-purple-100 p-4 rounded-lg">
+                    <div class="text-2xl font-bold text-purple-700">Week 1</div>
+                    <div class="text-sm text-gray-600">Can Begin Immediately</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Program Sections -->
+        <div id="programs-container"></div>
+
+        <!-- Implementation Timeline -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mt-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">🚀 Quick Start Timeline</h2>
+            
+            <div class="space-y-3">
+                <div class="flex gap-4 items-start">
+                    <div class="bg-green-600 text-white px-3 py-1 rounded font-bold text-sm">Week 1</div>
+                    <div class="flex-1">
+                        <div class="font-semibold">Organize & Launch</div>
+                        <div class="text-sm text-gray-600">Form student teams, get barangay permission, start River Cleanup & Seed Collection</div>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4 items-start">
+                    <div class="bg-blue-600 text-white px-3 py-1 rounded font-bold text-sm">Week 2-3</div>
+                    <div class="flex-1">
+                        <div class="font-semibold">Build & Plant</div>
+                        <div class="text-sm text-gray-600">Set up composting station, wormery, plant nursery. Begin door-to-door education</div>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4 items-start">
+                    <div class="bg-purple-600 text-white px-3 py-1 rounded font-bold text-sm">Month 2+</div>
+                    <div class="flex-1">
+                        <div class="font-semibold">Expand & Monitor</div>
+                        <div class="text-sm text-gray-600">Scale successful projects, collect data, train more students, prepare science fair presentations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Success Factors -->
+        <div class="bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-lg shadow-lg p-8 mt-6">
+            <h2 class="text-2xl font-bold mb-4">💡 Keys to Success</h2>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div>
+                    <div class="font-semibold mb-1">✅ Start Small, Scale Fast</div>
+                    <p class="opacity-90">Pick 2-3 projects, master them, then expand</p>
+                </div>
+                <div>
+                    <div class="font-semibold mb-1">✅ Document Everything</div>
+                    <p class="opacity-90">Photos, data, stories = funding opportunities later</p>
+                </div>
+                <div>
+                    <div class="font-semibold mb-1">✅ Make It Social</div>
+                    <p class="opacity-90">Use Facebook, TikTok to inspire others</p>
+                </div>
+                <div>
+                    <div class="font-semibold mb-1">✅ Celebrate Wins</div>
+                    <p class="opacity-90">Weekly shoutouts keep motivation high</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-8 text-gray-600 text-sm">
+            <p>Created by Biology Students of MCC for the People of Barangay Paralayunan</p>
+            <p class="font-semibold mt-1">Your action today = Healthier tomorrow 🌱</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
